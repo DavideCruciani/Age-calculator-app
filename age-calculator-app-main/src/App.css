@@ -1,0 +1,29 @@
+:root {
+	--primary-color-purple: hsl(259, 100%, 65%);
+	--primary-color-red: hsl(0, 100%, 67%);
+
+	--neutral-color-100: hsl(0, 0%, 100%);
+	--neutral-color-200: hsl(0, 0%, 94%);
+	--neutral-color-300: hsl(0, 0%, 86%);
+	--neutral-color-400: hsl(0, 1%, 44%);
+	--neutral-color-900: hsl(0, 0%, 8%);
+}
+
+.container {
+  background-color: var(--neutral-color-100);
+  width: 800px;
+  padding: 3.5rem;
+  border-radius: 1.5rem;
+  border-bottom-right-radius: 12rem;
+}
+
+@media (max-width: 375px) {
+	.container {
+		width: 300px;
+		padding: 3rem 1.25rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border-bottom-right-radius: 6rem;
+	}
+}

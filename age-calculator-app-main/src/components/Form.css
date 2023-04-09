@@ -1,0 +1,135 @@
+:root {
+	--primary-color-purple: hsl(259, 100%, 65%);
+	--primary-color-red: hsl(0, 100%, 67%);
+
+	--neutral-color-100: hsl(0, 0%, 100%);
+	--neutral-color-200: hsl(0, 0%, 94%);
+	--neutral-color-300: hsl(0, 0%, 86%);
+	--neutral-color-400: hsl(0, 1%, 44%);
+	--neutral-color-900: hsl(0, 0%, 8%);
+}
+
+.input-flex {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 3rem;
+}
+
+.label-input {
+  display: flex;
+  flex-direction: column;
+  color: var(--neutral-color-400);
+  font-weight: 700;
+}
+
+.label-input label {
+  margin-bottom: 0.825rem;
+  letter-spacing: 0.125rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  width: 100px;
+  padding: 0.625rem 1.5rem;
+  font-weight: 700;
+  color: var(--neutral-color-900);
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--neutral-color-300);
+}
+
+input[type="number"]:focus {
+  outline: 1px solid var(--primary-color-purple);
+}
+
+.submit-block {
+  display: flex;
+  align-items: center;
+}
+
+.submit-block hr {
+  width: 100%;
+}
+
+.submit-btn {
+  background-color: var(--primary-color-purple);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: var(--neutral-color-900);
+}
+
+.results-block p {
+  font-size: 6rem;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.final-result {
+  color: var(--primary-color-purple);
+}
+
+.error {
+  color: var(--primary-color-red);
+  font-size: 12px;
+  padding-top: 0.5rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+@media (max-width: 375px) {
+
+  .label-input label {
+    margin-bottom: 0.825rem;
+    letter-spacing: 0.125rem;
+    font-size: 0.75rem;
+  }
+
+  input[type="number"] {
+    width: 50px;
+    padding: 0.75rem 1rem;
+    font-size: 1.125rem;
+  }
+
+  .results-block p {
+    font-size: 3.25rem;
+    font-style: italic;
+    font-weight: 800;
+  }
+
+  .submit-block {
+    position: relative;
+    justify-content: center;
+    margin-bottom: 3.5rem;
+  }
+
+  .submit-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+  }
+
+  .error {
+    color: var(--primary-color-red);
+    font-size: 0.625rem;
+    padding-top: 0.5rem;
+    font-style: italic;
+    font-weight: 400;
+  }
+}
